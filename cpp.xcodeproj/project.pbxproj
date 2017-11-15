@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB2B02311FB094BD0012A13E /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB2B02301FB094BD0012A13E /* stack.cpp */; };
 		EB9D47661F9965590094B1DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB9D47651F9965590094B1DC /* main.cpp */; };
 		EBF7BE061F9981820001819E /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBF7BE051F9981820001819E /* vehicle.cpp */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB2B02301FB094BD0012A13E /* stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack.cpp; sourceTree = "<group>"; };
 		EB9D47621F9965590094B1DC /* cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9D47651F9965590094B1DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EBAB67C81FAFEAFF00A4E8C9 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			children = (
 				EB9D47651F9965590094B1DC /* main.cpp */,
 				EBF7BE051F9981820001819E /* vehicle.cpp */,
-				EB2B02301FB094BD0012A13E /* stack.cpp */,
 			);
 			path = cpp;
 			sourceTree = "<group>";
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF7BE061F9981820001819E /* vehicle.cpp in Sources */,
-				EB2B02311FB094BD0012A13E /* stack.cpp in Sources */,
 				EB9D47661F9965590094B1DC /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

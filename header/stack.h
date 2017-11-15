@@ -9,26 +9,52 @@
 #ifndef stack_h
 #define stack_h
 
-template<class T>
+template<typename T>
 class MyStack {
     
 public:
-    MyStack();
+    MyStack(){
+        m_stackSize = 0;
+        topNode = nullptr;
+    };
     ~MyStack(){};
     unsigned int m_stackSize;
     
-    void push(const T &element);
-    T pop();
-private:
+    void push(const T &element){
+        topNode = new StackNode(element, topNode);
+        m_stackSize++;
+    };
     
+    T pop(){
+        
+        if(topNode == nullptr){
+            return 0;
+        }
+        else{
+            m_stackSize--;
+            StackNode n(*topNode);
+            delete topNode;
+            topNode = n.previousNode;
+            return n.m_nodeElement;
+        }
+    };
+
+    
+    
+private:    
     struct StackNode {
-        StackNode(const T &element, StackNode *previousNode);
+        StackNode(const T &element, StackNode *previousNode){
+            m_nodeElement = element;
+            this->previousNode = previousNode;
+        };
         ~StackNode(){};
         
         T m_nodeElement;
         StackNode *previousNode;
     };
-    
+
+public:
     StackNode *topNode;
+    
 };
 #endif /* stack_h */

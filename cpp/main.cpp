@@ -13,16 +13,17 @@
 int main(int argc, const char * argv[]) {
     
     Log("hello from logger");
-    Vehicle v;
-    Log(v.Tires());
+    //Vehicle v;
+    //Log(v.Tires());
     
     MyStack<std::string> stack;
 
     stack.push("first");
     stack.push("second");
     stack.push("third");
+    stack.push("fourth");
 
-    while (stack.m_stackSize > 0) {
+    while (stack.topNode != nullptr) {
         Log(stack.pop());
     }
     
